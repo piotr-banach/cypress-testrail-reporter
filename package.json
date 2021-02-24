@@ -1,6 +1,6 @@
 {
   "name": "cypress-testrail-reporter-customized",
-  "version": "1.2.3.1",
+  "version": "1.2.3",
   "description": "A Testrail reporter for cypress including TestRail API basic library, with an option to disable closing runs (forked from cypress-testrail-reporter)",
   "main": "index.js",
   "private": false,
