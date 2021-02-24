@@ -1,7 +1,7 @@
 {
-  "name": "cypress-testrail-reporter",
-  "version": "1.2.3",
-  "description": "A Testrail reporter for cypress including TestRail API basic library",
+  "name": "cypress-testrail-reporter-customized",
+  "version": "1.2.3.1",
+  "description": "A Testrail reporter for cypress including TestRail API basic library, with an option to disable closing runs (forked from cypress-testrail-reporter)",
   "main": "index.js",
   "private": false,
   "keywords": [
@@ -10,17 +10,17 @@
     "reporter"
   ],
   "author": {
-    "name": "Milutin Savovic",
-    "email": "mickosavovic@gmail.com"
+    "name": "Piotr Banach",
+    "email": "pbanach.fp@gmail.com"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vivify-Ideas/cypress-testrail-reporter.git"
+    "url": "https://github.com/piotr-banach/cypress-testrail-reporter.git"
   },
   "bugs": {
-    "url": "https://github.com/Vivify-Ideas/cypress-testrail-reporter/issues"
+    "url": "https://github.com/piotr-banach/cypress-testrail-reporter/issues"
   },
   "scripts": {
     "tsc": "tsc",
