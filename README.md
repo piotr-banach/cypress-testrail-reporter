@@ -72,6 +72,10 @@ For TestRail hosted accounts maintained by [Gurock](http://www.gurock.com/), all
 
 You can read the whole TestRail documentation [here](http://docs.gurock.com/).
 
+## Author
+
+Piotr Banach
+
 ## License
 
 This project is licensed under the [MIT license](/LICENSE.md).
