@@ -28,7 +28,7 @@ export class CypressTestRailReporter extends reporters.Spec {
     runner.on('start', () => {
       const executionDateTime = moment().format('MMM Do YYYY, HH:mm (Z)');
       const name = `${reporterOptions.runName || 'Automated test run'} ${executionDateTime}`;
-      const description = 'For the Cypress run visit https://dashboard.cypress.io/#/projects/runs';
+      const description = 'Automated test run performed with Cypress';
       this.testRail.createRun(name, description);
     });
 
@@ -76,7 +76,11 @@ export class CypressTestRailReporter extends reporters.Spec {
 
       // publish test cases results & close the run
       this.testRail.publishResults(this.results)
-        .then(() => this.testRail.closeRun());
+        .then(() => {
+          if(reporterOptions.closeRuns === true){
+            this.testRail.closeRun()
+          }
+        });
     });
   }
 

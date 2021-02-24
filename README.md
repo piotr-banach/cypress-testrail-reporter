@@ -9,7 +9,7 @@ Publishes [Cypress](https://www.cypress.io/) runs on TestRail.
 ## Install
 
 ```shell
-$ npm install cypress-testrail-reporter --save-dev
+$ npm install cypress-testrail-reporter-customized --save-dev
 ```
 
 ## Usage
@@ -60,6 +60,8 @@ it("Can authenticate a valid userC123", ...
 
 **filter**: _string_ (optional: needs "includeAllInTestRun": false) Only return cases with matching filter string in the case title
 
+**closeRuns**: _bool_ (optional: default is false) will keep the automated test run open. Set to true to close the test run after it completes. 
+
 ## TestRail Settings
 
 To increase security, the TestRail team suggests using an API key instead of a password. You can see how to generate an API key [here](http://docs.gurock.com/testrail-api2/accessing#username_and_api_key).
@@ -72,7 +74,7 @@ You can read the whole TestRail documentation [here](http://docs.gurock.com/).
 
 ## Author
 
-Milutin Savovic - [github](https://github.com/mickosav)
+Piotr Banach
 
 ## License
 
